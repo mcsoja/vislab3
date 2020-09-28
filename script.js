@@ -91,7 +91,7 @@ d3.csv('buildings.csv', d=> {
 			//change image
 			let data = d.path[0].__data__;
 			d3.select('.image')
-				.attr("src", (d,i) => "/img/" + data.image);
+				.attr("src", (d,i) => data.image);
 			//change building text
 			d3.select(".name")
 				.text(d=>data.building)
