@@ -11,7 +11,7 @@ d3.csv('cities.csv', d=> {
 	  console.log('cities', data);
 	  Data = Data.filter(Data => Data.eu == true)
 	  console.log(Data.length)
-	  d3.select('.city-count').text(Data.length)
+	  d3.select('.city-count').text(Data.length + " Total Countries")
 	  const width = 700;
 	  const height = 550;
 	  const svg = d3.select('.population-plot')
